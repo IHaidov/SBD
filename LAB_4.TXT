@@ -1,0 +1,36 @@
+ZADANIE 1
+SELECT P.NAZWISKO NAZWISKO, P.ETAT ETAT, P.ID_ZESP ID_ZESP, Z.NAZWA NAZWA  FROM PRACOWNICY P INNER JOIN ZESPOLY Z ON P.ID_ZESP = Z.ID_ZESP ORDER BY NAZWISKO;
+
+ZADANIE 2
+SELECT P.NAZWISKO NAZWISKO, P.ETAT ETAT, P.ID_ZESP ID_ZESP, Z.NAZWA NAZWA  FROM PRACOWNICY P INNER JOIN ZESPOLY Z ON P.ID_ZESP = Z.ID_ZESP AND Z.ADRES LIKE 'PIOTROWO%' ORDER BY NAZWISKO;
+
+ZADANIE 3
+SELECT P.NAZWISKO NAZWISKO, E.NAZWA ETAT, P.PLACA_POD PLACA_POD, E.PLACA_MIN PLACA_MIN, E.PLACA_MAX PLACA_MAX FROM PRACOWNICY P INNER JOIN ETATY E ON P.ETAT = E.NAZWA ORDER BY E.NAZWA, P.NAZWISKO;
+
+ZADANIE 4
+SELECT P.NAZWISKO NAZWISKO, E.NAZWA ETAT, P.PLACA_POD PLACA_POD, E.PLACA_MIN PLACA_MIN, E.PLACA_MAX PLACA_MAX, CASE WHEN PLACA_POD BETWEEN PLACA_MIN AND PLACA_MAX THEN 'OK' ELSE 'NIE' END AS CZY_PENSJA_OK FROM PRACOWNICY P INNER JOIN ETATY E ON P.ETAT = E.NAZWA ORDER BY E.NAZWA, P.NAZWISKO;
+
+ZADANIE 5
+SELECT P.NAZWISKO , E.NAZWA , P.PLACA_POD, E.PLACA_MIN, E.PLACA_MAX FROM PRACOWNICY P INNER JOIN ETATY E ON P.ETAT = E.NAZWA WHERE P.PLACA_POD NOT BETWEEN E.PLACA_MIN AND E.PLACA_MAX ORDER BY E.NAZWA, P.NAZWISKO;
+
+ZADANIE 6
+select p.nazwisko, p.placa_pod, p.etat, e.nazwa as kat_plac, e.placa_min, e.placa_max from pracownicy p inner join etaty e on p.placa_pod >= e.placa_min and p.placa_pod <= e.placa_max order by p.nazwisko, kat_plac;
+
+ZADANIE 7
+select p.nazwisko, p.placa_pod, p.etat, e.nazwa as kat_plac, e.placa_min, e.placa_max from pracownicy p inner join etaty e on p.placa_pod >= e.placa_min and p.placa_pod <= e.placa_max and e.nazwa = 'SEKRETARKA' order by p.nazwisko, kat_plac;
+
+ZADANIE 8
+select p.nazwisko as pracownik, p.id_prac, s.nazwisko as szef, p.id_szefa from pracownicy p inner join pracownicy s on p.id_szefa = s.id_prac order by p.nazwisko; 
+
+ZADANIE 9
+select p.nazwisko as pracownik,to_char(p.zatrudniony,'yyyy.mm.dd') as prac_zatrudniony ,s.nazwisko as szef, to_char(s.zatrudniony,'yyyy.mm.dd')  as szef_zatrudniony from pracownicy p inner join pracownicy s on p.id_szefa = s.id_prac and extract(year from p.zatrudniony) - extract(year from s.zatrudniony)<=10 order by prac_zatrudniony, p.nazwisko; 
+
+ZADANIE 10
+select z.nazwa, count(*) as liczba_prac, AVG(p.placa_pod) as srednia_placa from pracownicy p inner join zespoly z on p.id_zesp = z.id_zesp group by z.nazwa order by z.nazwa;
+
+ZADANIE 11
+select z.nazwa, case 
+when count(*) <=2 then 'mały'
+when count(*) between 3 and 6 then 'średni'
+when count(*) >= 7 then 'duży'
+end as etykieta from pracownicy p inner join zespoly z on p.id_zesp = z.id_zesp group by z.nazwa order by z.nazwa;

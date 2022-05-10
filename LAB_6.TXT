@@ -1,0 +1,44 @@
+ZADANIE 1
+select nazwisko, etat, id_zesp from pracownicy where id_zesp = (select id_zesp from pracownicy where nazwisko like 'BRZEZINSKI') order by nazwisko;
+
+ZADANIE 2
+select p.nazwisko, p.etat, z.nazwa from pracownicy p join zespoly z on z.id_zesp = p.id_zesp where p.id_zesp = (select id_zesp from pracownicy where nazwisko like 'BRZEZINSKI') order by nazwisko;
+
+ZADANIE 3
+select nazwisko, etat, to_char(zatrudniony,'yyyy/mm/dd') as zatrudniony from pracownicy where zatrudniony = (select min(zatrudniony) from pracownicy where etat = 'PROFESOR');
+
+ZADANIE 4
+select nazwisko, to_char(zatrudniony, 'yyyy/mm/dd') as zatrudniony, id_zesp from pracownicy where zatrudniony in (select max(zatrudniony) from pracownicy group by id_zesp)  order by zatrudniony;
+
+ZADANIE 5
+select id_zesp, nazwa, adres from zespoly where id_zesp is not null and id_zesp not in (select unique id_zesp from pracownicy);
+
+ZADANIE 6
+select p.nazwisko from pracownicy p where p.etat = 'PROFESOR' and p.id_prac not in (select id_szefa from pracownicy where etat = 'STAZYSTA') order by p.nazwisko;
+
+ZADANIE 7
+select p.id_zesp, sum(p.placa_pod) from pracownicy p inner join zespoly z on z.id_zesp = p.id_zesp group by p.id_zesp 
+having 
+sum(p.placa_pod) = (select max(sum(p.placa_pod)) from pracownicy p inner join zespoly z on z.id_zesp = p.id_zesp  group by p.id_zesp);
+
+ZADANIE 8
+select z.nazwa, sum(p.placa_pod) from pracownicy p inner join zespoly z on z.id_zesp = p.id_zesp group by z.nazwa 
+having 
+sum(p.placa_pod) = (select max(sum(p.placa_pod)) from pracownicy p inner join zespoly z on z.id_zesp = p.id_zesp  group by p.id_zesp);
+
+ZADANIE 9
+select z.nazwa, count(*) as ilu_pracownikow from pracownicy p inner join zespoly z on z.id_zesp = p.id_zesp 
+group by z.nazwa 
+having count(p.nazwisko) > 
+(select count(*) from pracownicy p inner join zespoly z on z.id_zesp = p.id_zesp group by z.nazwa having z.nazwa='ADMINISTRACJA')
+order by z.nazwa;
+
+ZADANIE 10
+select etat from pracownicy group by etat having count(*) = (select max(count(*)) from pracownicy group by etat) order by etat;
+
+ZADANIE 11
+select etat, listagg(nazwisko,',') within group (order by nazwisko) as 'pracownicy' from pracownicy group by etat having count(*) = (select max(count(*)) from pracownicy group by etat) order by etat;
+
+ZADANIE 12
+select p.nazwisko as pracownik, s.nazwisko as szef from pracownicy p inner join pracownicy s on p.id_szefa = s.id_prac 
+where s.placa_pod-p.placa_pod = (select min(abs(s.placa_pod-p.placa_pod)) from pracownicy p inner join pracownicy s on s.id_prac = p.id_szefa);

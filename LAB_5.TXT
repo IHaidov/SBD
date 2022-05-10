@@ -1,0 +1,71 @@
+ZADANIE 1
+select p.nazwisko, z.id_zesp, z.nazwa from pracownicy p left outer join zespoly z on z.id_zesp = p.id_zesp order by p.nazwisko;
+
+ZADANIE 2
+select z.nazwa, z.id_zesp, case 
+when p.nazwisko is null then 'brak pracownikow'
+else p.nazwisko 
+end as "nazwa"
+from zespoly z left outer join pracownicy p on z.id_zesp = p.id_zesp order by z.nazwa;
+
+ZADANIE 3
+select p.nazwisko, e.nazwa, p.placa_pod, e.placa_min, e.placa_max from pracownicy p left outer join etaty e on e.nazwa = p.etat order by e.nazwa, p.nazwisko;
+
+ZADANIE 4
+select z.nazwa, count(p.nazwisko) as liczba, sum(p.placa_pod) as suma_plac from zespoly z left outer join pracownicy p on z.id_zesp = p.id_zesp and p.nazwisko is not null group by z.nazwa order by z.nazwa;
+
+ZADANIE 5
+select nazwa from zespoly where id_zesp not in (select id_zesp from pracownicy where id_zesp is not null);
+
+ZADANIE 6
+select p.nazwisko as pracownik, p.id_prac, s.nazwisko as szef, p.id_szefa from pracownicy p left outer join pracownicy s on p.id_szefa = s.id_prac order by p.nazwisko
+
+ZADANIE 7
+select s.nazwisko, count(p.nazwisko) as liczba_podwladnych from pracownicy s left outer join pracownicy p on s.id_prac = p.id_szefa group by s.nazwisko order by s.nazwisko;
+
+ZADANIE 8
+select p.nazwisko, e.nazwa as etat,p.placa_pod, z.nazwa ,s.nazwisko  as szef
+from pracownicy p 
+left outer join zespoly z on z.id_zesp = p.id_zesp
+left outer join pracownicy s on s.id_prac = p.id_szefa 
+left outer join etaty e on e.nazwa = p.etat 
+order by p.nazwisko;
+
+ZADANIE 9
+select nazwisko, nazwa from pracownicy cross join zespoly order by nazwisko, nazwa;
+
+ZADANIE 10
+select count(*) from etaty, pracownicy, zespoly;
+
+ZADANIE 11
+select etat from pracownicy where extract(year from zatrudniony) = 1992
+union
+select etat from pracownicy where extract(year from zatrudniony) = 1993 order by etat;
+
+ZADANIE 12
+select id_zesp
+from zespoly 
+minus
+select id_zesp
+from PRACOWNICY;
+
+ZADANIE 13
+select id_zesp, nazwa
+from zespoly 
+Minus
+SELECT z.id_zesp, z.nazwa
+FROM pracownicy p left outer JOIN zespoly z on p.id_zesp = z.id_zesp;
+
+ZADANIE 14
+select nazwisko, placa_pod, 'Poniżej 480 złotych' as PROG
+from pracownicy
+where placa_pod < 480
+union
+select nazwisko, placa_pod, 'Dokladnie 480 złotych' as PROG
+from pracownicy
+where placa_pod = 480
+union
+select nazwisko, placa_pod, 'Powyżej 480 złotych' as PROG
+from pracownicy
+where placa_pod > 480
+order by placa_podж

@@ -1,0 +1,123 @@
+Zad 1:
+Select nazwisko, placa_pod 
+from PRACOWNICY 
+order by placa_pod DESC
+FETCH first 3 rows ONLY;
+
+Select ROWNUM,nazwisko, placa_pod 
+from PRACOWNICY 
+where ROWNUM <= 3
+order by placa_pod DESC;
+
+Zad 2:
+Select nazwisko, placa_pod 
+from PRACOWNICY 
+order by placa_pod DESC
+OFFSET 5 ROWS
+FETCH next 5 rows WITH TIES;
+
+SELECT nazwisko, placa_pod from
+(
+    Select Rownum r, nazwisko, placa_pod from PRACOWNICY
+
+)
+where r > 5 and r < =10
+order by placa_pod DESC;
+
+Zad 3:
+with aaa as(
+    Select z.ID_ZESP, avg(placa_pod) as Srednia
+FROM PRACOWNICY p inner join zespoly z on p.id_zesp = z.ID_ZESP
+GROUP by z.ID_ZESP
+)
+ 
+select p.NAZWISKO, p.PLACA_POD, (p.PLACA_POD - Srednia) as Roznica
+from PRACOWNICY p INNER join aaa z on p.id_zesp = z.ID_ZESP
+where p.PLACA_POD - Srednia > 0
+order by NAZWISKO asc;
+
+Zad 4:
+WITH lata AS (
+SELECT To_char(zatrudniony,'yyyy') as ROK, count(*) as liczba 
+FROM PRACOWNICY 
+group by To_char(zatrudniony,'yyyy')
+order by liczba desc, ROK ASC
+)
+ 
+SELECT * 
+from lata
+
+Zad 5:
+WITH lata AS (
+SELECT To_char(zatrudniony,'yyyy') as ROK, count(*) as liczba 
+FROM PRACOWNICY 
+group by To_char(zatrudniony,'yyyy')
+order by liczba desc, ROK ASC
+)
+ 
+SELECT * 
+from lata
+where liczba = (select max(liczba) 
+                from lata);
+
+
+Zad 6:
+with Piotrowo as (
+    SELECT nazwisko, nazwa, adres
+    from PRACOWNICY p inner join zespoly z 
+    on p.id_zesp = z.id_zesp
+    where adres in ('PIOTROWO 3A')
+),
+Asystenci as (
+    SELECT nazwisko, etat
+    from PRACOWNICY p  
+    where etat in ('ASYSTENT')
+)
+
+SELECT a.nazwisko, a.etat, p.nazwa, p.adres 
+from Piotrowo p inner join Asystenci a 
+on p.nazwisko = a.nazwisko;
+
+Zad 7:
+with suma_plac as (
+    SELECT ID_ZESP, SUM(PLACA_POD) AS SUMARYCZNE_PLACE
+    FROM PRACOWNICY p
+    GROUP BY p.ID_ZESP
+)
+
+SELECT nazwa,SUMARYCZNE_PLACE
+from suma_plac s inner join ZESPOLY z
+on s.ID_ZESP = z.ID_ZESP
+where SUMARYCZNE_PLACE = (select max(SUMARYCZNE_PLACE) 
+                from suma_plac);
+
+Zad 8:
+WITH
+podwladni (id_prac, id_szefa, nazwisko, poziom) AS
+(SELECT id_prac, id_szefa, nazwisko, 1
+FROM pracownicy
+WHERE nazwisko = 'BRZEZINSKI'
+UNION ALL
+SELECT p.id_prac, p.id_szefa, p.nazwisko, poziom+1
+FROM podwladni s JOIN pracownicy p ON s.id_prac = p.id_szefa)
+SEARCH DEPTH FIRST BY nazwisko SET porzadek_potomkow
+SELECT nazwisko, poziom as POZYCJA_W_HIERARCHII
+FROM podwladni
+ORDER BY porzadek_potomkow;
+
+Zad 9:
+WITH
+podwladni (id_prac, id_szefa, nazwisko, poziom) AS
+-- definicja korzenia hierarchii
+(SELECT id_prac, id_szefa, nazwisko, 1
+FROM pracownicy
+WHERE nazwisko = 'BRZEZINSKI'
+UNION ALL
+-- rekurencyjna definicja niższych poziomów
+SELECT p.id_prac, p.id_szefa,lpad(' ',4*(poziom)) || p.nazwisko, poziom+1
+FROM podwladni s JOIN pracownicy p ON s.id_prac = p.id_szefa)
+-- wskazanie sposobu przeszukiwania hierarchii i sortowania rekordów-dzieci
+SEARCH DEPTH FIRST BY nazwisko SET porzadek_potomkow
+SELECT nazwisko, poziom as POZYCJA_W_HIERARCHII
+FROM podwladni
+ORDER BY porzadek_potomkow;
