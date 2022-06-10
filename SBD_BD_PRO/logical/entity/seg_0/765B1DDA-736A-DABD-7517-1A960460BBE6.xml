@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="765B1DDA-736A-DABD-7517-1A960460BBE6" name="Producer">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:18:19 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Producer_id" id="7B417D65-269B-C4E3-B043-FA700ADDFDDE">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:18:32 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Producer_name" id="E8F2666B-A58D-7240-CAF6-E62945674DE9">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:18:43 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Producer_description" id="0BA7DC10-670D-6089-1181-9EC8BA2FE595">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:18:55 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="41151B67-0BB7-85C9-A559-9A33C239E581" name="Producer PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:18:41 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7B417D65-269B-C4E3-B043-FA700ADDFDDE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

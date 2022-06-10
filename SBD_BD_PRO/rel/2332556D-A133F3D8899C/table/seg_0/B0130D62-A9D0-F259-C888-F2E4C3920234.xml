@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B0130D62-A9D0-F259-C888-F2E4C3920234" name="Product">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:31:30 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Product_id" id="3A6C0BEF-6501-0375-1249-4374BA793804">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:33:45 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Product_name" id="34B7E97B-2949-0684-3F3D-DDAFDF9C2F7F">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:33:45 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Product_description" id="2BB71081-F202-F84A-EB0A-F8B24542EA0D">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:33:45 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Guarantee_time" id="49E2D910-C0B6-3FEA-9C8D-1810184A9205">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:33:45 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Amount" id="B9DC2AF0-9D11-BFA6-A7AC-E3A6F0FD8183">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:33:45 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Price_netto" id="5FBCBCB8-65D0-3BCE-4B09-9F02E8BC4D5E">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:33:45 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Price_brutto" id="36CB456A-A623-1E6C-C2B5-5B5814DFAEC2">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:33:45 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B7559F38-D9FE-A012-6A00-B4F8C4CD899E" name="Product_PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:33:45 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A6C0BEF-6501-0375-1249-4374BA793804"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

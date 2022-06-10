@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A6BE596F-DC2A-B11F-05EF-F3034187B6E4" name="Producer">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:22:51 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Producer_id" id="F56E7944-216F-12C5-3BEB-C3D288886327">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:23:31 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Producer_name" id="CE4D1401-5DF9-D30F-AB96-D419C62E560E">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:23:31 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Producer_description" id="FBE7E5F4-7E6C-0C79-2782-86BF3A83C6CD">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:23:31 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="87C3FCA5-B7E0-9031-DB9F-5AB295A7768A" name="Producer_PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:23:31 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F56E7944-216F-12C5-3BEB-C3D288886327"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

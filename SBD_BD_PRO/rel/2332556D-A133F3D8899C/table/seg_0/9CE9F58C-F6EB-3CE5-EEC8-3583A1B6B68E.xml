@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9CE9F58C-F6EB-3CE5-EEC8-3583A1B6B68E" name="Region">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:42:14 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Region_id" id="2FC3CD1A-FF45-F9FF-E655-45A353D73156">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:42:54 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Region_name" id="D51696BA-0B0A-FA2F-803D-8E9D47F68989">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:42:54 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CBDDDE35-3365-1732-E80A-421C747AE4D5" name="Region_PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:42:54 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FC3CD1A-FF45-F9FF-E655-45A353D73156"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

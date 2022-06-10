@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6D10C5EF-5D75-C3E7-9C87-3B1F72F763B2" name="Delivery">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:43:10 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Delivery_id" id="E92C0826-C899-1F63-93B3-94E9DB4BB2EA">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:44:02 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Delivery_price" id="2A6CC438-C834-DD7A-79A1-1FB0F66F6771">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:44:02 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Deliver_id" id="AAFB9223-B6B6-8EB4-0B7C-E8FFD5E3D804">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:44:02 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="13B1ADFA-34F0-7413-D6FC-1C939451F852" name="Delivery_PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:44:02 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E92C0826-C899-1F63-93B3-94E9DB4BB2EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

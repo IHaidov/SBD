@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A9A645B8-3A25-D3AA-2EFC-933FB2CB188F" name="Roles">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 22:00:38 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Role_id" id="DC475C01-88A2-5215-2920-EA87E831A971">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 22:01:16 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Role_name" id="F57D1241-5890-55B5-D5DF-83B43B3BAF1A">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 22:01:16 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8F38649E-BCEF-F96B-6A7B-B233A1392BE4" name="Roles_PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 22:01:16 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC475C01-88A2-5215-2920-EA87E831A971"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

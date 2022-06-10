@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="45E32729-F075-A489-9336-D9FA162BF4D4" name="Companies">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:58:02 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Company_id" id="F323103D-542B-588A-CE9F-6DE3811AD544">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:59:25 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F6B6411-A031-3E66-9E7B-22A395A909B7" referredColumn="0A7BD928-889E-A97F-4076-5FCFEA9E3EDA"/>
+</associations>
+</Column>
+<Column name="Company_name" id="B1FA1D1F-F6C3-00FC-87AF-37025649BC26">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:59:25 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Company_description" id="238C5B16-DEF0-413C-7ABD-CC839307F292">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:59:25 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22D7A562-2731-8D03-9560-84552B1F22A3" name="Companies_PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:59:25 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F323103D-542B-588A-CE9F-6DE3811AD544"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E87A903-590E-3DBB-9D9E-589128CA069E" name="Companies_Users_FK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:04:01 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F323103D-542B-588A-CE9F-6DE3811AD544"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

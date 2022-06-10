@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4F94726-9B19-D4DD-44F0-10CF978580F6" name="Deliver_Region">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:41:24 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Deliver_id" id="E2D0E6F8-5113-7494-0623-5AF1FF11A245">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:42:05 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB898343-86CE-4C64-0375-7F63A26A6690" referredColumn="9C8FD367-9010-7B65-0313-46423E8AD885"/>
+</associations>
+</Column>
+<Column name="Region_id" id="2392C8F7-90FE-C0DF-83A6-1B38F364B476">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:42:05 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="868BA6F6-4E31-AFC0-0D83-BBAAE3DA3C6A" referredColumn="2FC3CD1A-FF45-F9FF-E655-45A353D73156"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9883170F-0B79-E26A-FBDD-7DB4B3AED43A" name="Deliver_Region_PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:42:05 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2D0E6F8-5113-7494-0623-5AF1FF11A245"/>
+<colUsage columnID="2392C8F7-90FE-C0DF-83A6-1B38F364B476"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A9800EE6-5DAB-AFE3-62D1-1F4431C649F3" name="Deliver_Region_Region_FK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:44:46 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2392C8F7-90FE-C0DF-83A6-1B38F364B476"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="280C4B59-637B-039F-931D-8B9A5184B2C8" name="Deliver_Region_Deliver_FK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:44:53 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2D0E6F8-5113-7494-0623-5AF1FF11A245"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

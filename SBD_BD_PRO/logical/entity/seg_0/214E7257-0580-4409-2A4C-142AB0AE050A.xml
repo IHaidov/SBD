@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="214E7257-0580-4409-2A4C-142AB0AE050A" name="User">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:04:54 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="User_id" id="F965D072-A2D1-B5AF-8C61-7BDA887EBF40">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:05:00 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="User_login" id="FCA5909A-8F41-A4C4-4728-438E6FAD4D1B">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:05:12 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="User_password" id="E86AA4E7-F308-3837-D7BF-0EED724579E3">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:05:25 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="User_email" id="2C1AE579-71EC-49CF-B0AC-A6A262A8D9AA">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:05:47 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_birth" id="BA6D1314-C68F-C2B3-6AD3-C0F8796E85A2">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:05:59 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Card_id" id="41A94446-0CC3-EAC8-13FC-B6F597BFB907">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:25:23 UTC</createdTime>
+<generatorID>91B2117A-C8BC-E757-2E45-F9B1D3BE281F</generatorID>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8AFA7C9E-2BE8-5A71-BF7B-5767F941EEE6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C66E1599-5C3D-A50F-B5CC-0147D5254FCE" name="User PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:05:11 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F965D072-A2D1-B5AF-8C61-7BDA887EBF40</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

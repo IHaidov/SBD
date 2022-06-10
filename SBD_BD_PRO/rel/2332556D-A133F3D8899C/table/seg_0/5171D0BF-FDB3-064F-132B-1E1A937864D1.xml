@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5171D0BF-FDB3-064F-132B-1E1A937864D1" name="Product_Producer">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:29:05 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Product_id" id="1CEEF97B-F1DD-B3A1-E791-5F5D5C40A50F">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:29:41 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F086F6AB-B1E2-B5FE-ED0B-98162F4833D7" referredColumn="3A6C0BEF-6501-0375-1249-4374BA793804"/>
+</associations>
+</Column>
+<Column name="Producer_id" id="05599276-8E05-31C0-AA8C-E9980F1671D2">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:29:41 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="576A00FF-B0E4-62EC-F717-26E39F4C1B75" referredColumn="F56E7944-216F-12C5-3BEB-C3D288886327"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D12F4C0C-B8DD-4057-EAF2-E345311DE6A3" name="Product_Producer_PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:29:41 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CEEF97B-F1DD-B3A1-E791-5F5D5C40A50F"/>
+<colUsage columnID="05599276-8E05-31C0-AA8C-E9980F1671D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64D3478E-1AEC-BA95-63C2-29E9568048F7" name="Product_Producer_Product_FK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:34:24 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CEEF97B-F1DD-B3A1-E791-5F5D5C40A50F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0BF6CAE5-C634-0B51-4327-9299A0B417B4" name="Product_Producer_Producer_FK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:34:36 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05599276-8E05-31C0-AA8C-E9980F1671D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BB2D9FB8-CFEB-6C6F-C5E5-45782E9D0012" name="Category">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:20:35 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Category_id" id="5141CD74-FC78-74A1-9761-E611E3BFADF3">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:21:06 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Category_name" id="0EF032B4-7E34-2ABE-509C-1B266D302390">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:21:06 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FA7C8A27-DFAB-764E-B27A-BDE43892F40C" name="Category_PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:21:06 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5141CD74-FC78-74A1-9761-E611E3BFADF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

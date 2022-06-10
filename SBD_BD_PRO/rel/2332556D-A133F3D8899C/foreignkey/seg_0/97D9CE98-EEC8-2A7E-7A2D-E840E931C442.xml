@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="97D9CE98-EEC8-2A7E-7A2D-E840E931C442" containerWithKeyObject="544F20D5-5525-826C-BF3A-E7E072C28FDB" localFKIndex="DA70ECFA-62E4-3D3E-6AF0-DD4FEB057D18" name="Deliver_Delivery_FK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:45:00 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<referredTableLongName>Delivery</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6D10C5EF-5D75-C3E7-9C87-3B1F72F763B2</referredTableID>
+<keyObject>13B1ADFA-34F0-7413-D6FC-1C939451F852</keyObject>
+<referredKeyID>13B1ADFA-34F0-7413-D6FC-1C939451F852</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Delivery_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

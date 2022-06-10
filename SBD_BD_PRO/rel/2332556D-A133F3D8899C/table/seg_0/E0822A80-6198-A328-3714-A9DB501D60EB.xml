@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0822A80-6198-A328-3714-A9DB501D60EB" name="Comment_User">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:15:47 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Comment_User_id" id="3C892227-4813-CBF7-7C61-7E02F9C3FF7A">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:16:43 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Comment_id" id="6BDB2D77-638D-CE30-EC2B-DBD9C7E6F763">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:16:43 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B02D8198-7431-60BD-EB5A-8ADA15402F48" referredColumn="CD9704A3-3548-2C48-239B-E32821D8A644"/>
+</associations>
+</Column>
+<Column name="User_id" id="4463BE8D-BC7B-0341-4247-A59766A6EAB4">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:16:43 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB2CC167-B54F-F37C-29AD-0796099AF0C5" referredColumn="0A7BD928-889E-A97F-4076-5FCFEA9E3EDA"/>
+</associations>
+</Column>
+<Column name="Ref_Comment_id" id="51408E66-3410-1F7F-DF31-02EC12A44D12">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:16:43 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AD8206F3-4112-9F55-02B9-D67410411BB8" name="Comment_User_PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:16:43 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C892227-4813-CBF7-7C61-7E02F9C3FF7A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3E654BF-0AE7-2E0A-77A2-2822CE913E76" name="Comment_User_Comments_FK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:17:09 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BDB2D77-638D-CE30-EC2B-DBD9C7E6F763"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59714BB5-0977-5862-A1E6-ED378A968833" name="Comment_User_Users_FK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:18:03 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4463BE8D-BC7B-0341-4247-A59766A6EAB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

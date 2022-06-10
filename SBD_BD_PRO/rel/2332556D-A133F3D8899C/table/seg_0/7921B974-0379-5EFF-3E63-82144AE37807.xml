@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7921B974-0379-5EFF-3E63-82144AE37807" name="Product_Card">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:30:38 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Product_id" id="61CD4E93-16C4-1BCD-D802-C4E32A9DA0A0">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:31:09 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDC8A623-D3CA-A48E-2904-5540E6C7ABBD" referredColumn="3A6C0BEF-6501-0375-1249-4374BA793804"/>
+</associations>
+</Column>
+<Column name="Card_id" id="16F68CB9-B47D-1798-8FE7-1F0100B26273">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:31:09 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72A6F9A6-82C2-80F0-898E-1C43FA605E8B" referredColumn="940024EA-E6BD-1C87-5B55-8191EA3EAE45"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8969DD8A-AD93-F012-04BF-8998D2ACFAB7" name="Product_Card_PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:31:09 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61CD4E93-16C4-1BCD-D802-C4E32A9DA0A0"/>
+<colUsage columnID="16F68CB9-B47D-1798-8FE7-1F0100B26273"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA7B2317-93BF-6616-B415-DECB29269FC5" name="Product_Card_Card_FK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:35:00 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="16F68CB9-B47D-1798-8FE7-1F0100B26273"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32CF7881-5412-9FE1-F7AF-093918D2767F" name="Product_Card_Product_FK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:35:10 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61CD4E93-16C4-1BCD-D802-C4E32A9DA0A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

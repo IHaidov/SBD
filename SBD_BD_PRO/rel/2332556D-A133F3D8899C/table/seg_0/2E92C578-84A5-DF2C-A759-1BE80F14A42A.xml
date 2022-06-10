@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2E92C578-84A5-DF2C-A759-1BE80F14A42A" name="User_Role">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:06:20 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="User_id" id="284D6026-8B81-41C4-0745-F7ABB948DA19">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:07:26 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F50AC403-5BFF-2052-0B2A-281FE9C1FF1F" referredColumn="0A7BD928-889E-A97F-4076-5FCFEA9E3EDA"/>
+</associations>
+</Column>
+<Column name="Role_id" id="4AD22BB2-CDFC-17E6-B481-F61601234D1D">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:07:26 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B5B16A05-E4CF-509D-B3FB-B3011F7BEA9F" referredColumn="DC475C01-88A2-5215-2920-EA87E831A971"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D06641EB-69A0-B172-C3BD-6E04DF6D4E3D" name="User_Role_PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:07:26 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="284D6026-8B81-41C4-0745-F7ABB948DA19"/>
+<colUsage columnID="4AD22BB2-CDFC-17E6-B481-F61601234D1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6EAEC943-8B37-55F5-FD9C-B9DA801D4B58" name="User_Role_Users_FK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:08:51 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="284D6026-8B81-41C4-0745-F7ABB948DA19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="548BF1A4-9392-86F7-8187-3E6FF757879C" name="User_Role_Roles_FK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:19:21 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AD22BB2-CDFC-17E6-B481-F61601234D1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

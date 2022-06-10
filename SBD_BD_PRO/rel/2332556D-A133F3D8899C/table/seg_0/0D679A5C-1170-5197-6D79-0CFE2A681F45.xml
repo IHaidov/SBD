@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D679A5C-1170-5197-6D79-0CFE2A681F45" name="Order">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:48:18 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<ordsAlias>table_23</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Order_id" id="3A022307-3510-F410-1B68-CFC96D71C065">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:49:50 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Date_order" id="CF0F3130-ED8D-53F8-9CD6-A06CF4C7ABDB">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:49:50 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Date_deliver" id="EEAE2F84-3172-B759-47D5-583B6D498F38">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:49:50 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Date_paying" id="8C4F3B77-F31D-C2F0-DAE9-A24AF54ABA39">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:49:50 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Delivery_id" id="D280878F-D314-6D05-2828-D1CFD71C9D31">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:49:50 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1086832A-9631-FD67-6CFD-3F7579472C27" referredColumn="E92C0826-C899-1F63-93B3-94E9DB4BB2EA"/>
+</associations>
+</Column>
+<Column name="User_id" id="4AC6F812-EC29-6B1E-E0C2-6E3C56E5C128">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:49:50 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B744EC69-85BD-8DD1-5809-437AE860DEEA" referredColumn="0A7BD928-889E-A97F-4076-5FCFEA9E3EDA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D82679C4-3B16-0BD0-83D8-2AA4777EE37F" name="Order_PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:49:50 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A022307-3510-F410-1B68-CFC96D71C065"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DBF481C4-3503-2A5C-DF35-24062E68F1C1" name="Order_Delivery_FK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:51:24 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D280878F-D314-6D05-2828-D1CFD71C9D31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="252F34A7-D860-97EA-8AC8-5DDDB44633F6" name="Order_Users_FK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:51:35 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AC6F812-EC29-6B1E-E0C2-6E3C56E5C128"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

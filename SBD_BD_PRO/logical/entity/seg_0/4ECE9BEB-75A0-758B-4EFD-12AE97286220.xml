@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4ECE9BEB-75A0-758B-4EFD-12AE97286220" name="Card">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:20:09 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Card_id" id="8AFA7C9E-2BE8-5A71-BF7B-5767F941EEE6">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:20:26 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="User_id" id="9C396C13-5E6B-96D6-752C-095C2BA3A973">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:25:23 UTC</createdTime>
+<generatorID>91B2117A-C8BC-E757-2E45-F9B1D3BE281F</generatorID>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F965D072-A2D1-B5AF-8C61-7BDA887EBF40</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Order_id" id="BC8D63CB-F823-BF84-C192-4926E84B0DFA">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:38:25 UTC</createdTime>
+<generatorID>32295996-9C9C-93E3-3C8F-C81AF6FF0B6A</generatorID>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<referedAttribute>035AA95E-E94C-7A5C-0578-C41A13896CFD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1B53A1B3-6D5A-A6D9-FE27-D219C86486B5" name="Card PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:21:17 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8AFA7C9E-2BE8-5A71-BF7B-5767F941EEE6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

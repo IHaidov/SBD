@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8F6272BF-2AEB-A0BE-FF04-D9E2B13ADE77" name="Order">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:32:53 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Order_id" id="035AA95E-E94C-7A5C-0578-C41A13896CFD">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:33:00 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date_ordering" id="DE30A2C7-3C1B-3265-C903-240BBF4873C2">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:33:09 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date_delivering" id="A7C10B7D-8EB2-0384-0B12-4FE6A304E22A">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:33:32 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date_paying" id="0DEA263B-3ADB-E6FE-AF42-EE6D8F9F60F9">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:33:44 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Card_id" id="657F20D4-97BA-FB57-BB46-300236297CE7">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:38:25 UTC</createdTime>
+<generatorID>32295996-9C9C-93E3-3C8F-C81AF6FF0B6A</generatorID>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<referedAttribute>8AFA7C9E-2BE8-5A71-BF7B-5767F941EEE6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Delivery_id" id="D1FFF087-1E05-4AA2-18F4-1F1A9BAD3CF5">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:38:40 UTC</createdTime>
+<generatorID>992A6E01-8237-B33B-55DB-A8D2D035D607</generatorID>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<referedAttribute>9840CD01-DCBD-E3FB-11CD-3B6AF8BE0225</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3E08315E-0662-CE25-997D-4E098E742A2C" name="Order PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:33:09 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>035AA95E-E94C-7A5C-0578-C41A13896CFD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF7DCA14-F98A-E473-0D72-7889DABA326F" name="Card">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:25:37 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Card_id" id="940024EA-E6BD-1C87-5B55-8191EA3EAE45">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:26:04 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="User_id" id="712CD8D3-EB6F-4B31-799E-E95506BFA1B8">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:26:04 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="81707D93-540A-A16B-0B92-44AE735554ED" name="Card_PK">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-22 19:26:04 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="940024EA-E6BD-1C87-5B55-8191EA3EAE45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

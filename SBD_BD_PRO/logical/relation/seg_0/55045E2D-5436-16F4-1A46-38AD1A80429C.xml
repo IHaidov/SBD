@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Product_card" directorySegmentName="seg_0" id="55045E2D-5436-16F4-1A46-38AD1A80429C">
+<createdBy>Ivan</createdBy>
+<createdTime>2022-05-21 21:25:29 UTC</createdTime>
+<ownerDesignName>SBD_BD_PRO</ownerDesignName>
+<engineerTo>
+<item key="2332556D-E82F-82C0-A0D8-A133F3D8899C" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>D9636703-0CBB-93F5-5B29-AA3E9CBEE914</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4ECE9BEB-75A0-758B-4EFD-12AE97286220</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
